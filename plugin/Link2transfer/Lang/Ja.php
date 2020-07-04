@@ -8,4 +8,5 @@ use P5\Lang;
 
 class Ja extends Lang
 {
+    const APP_DETAIL = '帳票発行と仕訳を連動します';
 }
