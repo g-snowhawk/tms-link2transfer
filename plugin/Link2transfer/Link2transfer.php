@@ -33,9 +33,9 @@ class Link2transfer extends Plugin
         parent::init();
     }
 
-    public static function extendTemplateDir(): string
+    public static function extendTemplateDir(): ?string
     {
-        return __DIR__ . '/' . View::TEMPLATE_DIR_NAME;
+        return null;
     }
 
 
