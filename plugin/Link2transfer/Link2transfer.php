@@ -82,10 +82,6 @@ class Link2transfer extends Plugin
 
     public function afterSaveReceipt($caller_class, $post, $type, $total_price): bool
     {
-        if (!isset($post['faircopy'])) {
-            return true;
-        }
-
         $relation = $post['relation'] ?? 'no';
         $draft = $post['draft'] ?? null;
         if (is_null($draft)) {
